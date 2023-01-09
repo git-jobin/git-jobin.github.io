@@ -343,5 +343,14 @@
         max-width: fit-content;
     }
 
+    .about {
+        position: relative;
+    }
+
+    .about-container {
+        position: absolute;
+        top: 5rem;
+    }
+
 
 }
