@@ -1,0 +1,347 @@
+
+
+@media screen and (max-width: 800px) {
+
+    .logo,.nav-links {
+        display: none;
+    }
+
+    .active {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.8;
+        z-index: 100;
+    }
+
+    nav {
+        display: block !important;
+        position: fixed !important;
+        top: 0;
+        right: 0;
+        width: 500px !important;
+        height: 500px !important;
+        -webkit-user-select: none !important;
+        -moz-user-select: none !important;
+        -ms-user-select: none !important;
+        user-select: none !important;
+        transform: translate3d(25px, -25px, 0) !important;
+        transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9) !important;
+        z-index: 500;
+    }
+
+    nav.open {
+        transform: translate3d(0, 0, 0) !important;
+    }
+
+    nav.top-right {
+        top: -170px !important;
+        right: -170px !important;
+    }
+
+    .disc {
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        font: 25px Alegreya Sans, sans-serif;
+        line-height:40px; 
+        padding-top: 10px;
+        border-radius: 500px;
+        transform: scale3d(0.5, 0.5, 0.5) rotate3d(0, 0, 1, 190deg);
+        pointer-events: none;
+        opacity: 0;
+        cursor: pointer;
+        transition: transform 0.5s cubic-bezier(0.3, 1.4, 0.5, 0.9), opacity 0.5s;
+        text-decoration: none;
+    }
+
+    .disc div {
+        transform: rotate(180deg);
+    }
+
+    .open .disc {
+        pointer-events: auto;
+        opacity: 1;
+    }
+
+    .l1 {
+        top: -180px;
+        left: -180px;
+        right: -180px;
+        bottom: -180px;
+        background: #1f245d;
+        transition-delay: 0s;
+        color: white;
+    }
+
+    .open .l1 {
+        transition-delay: 0s;
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+        opacity: 1;
+    }
+
+    .open .l1:hover {
+        background: shade(#9b9eb7, 90%);
+        color: white;
+        transition-delay: 0s;
+    }
+
+    .open .l1:active {
+        background: shade(#9b9eb7, 50%);
+        color: #9b9eb7;
+    }
+
+    .open .l1.toggle {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+    }
+
+    .l2 {
+        top: -120px;
+        left: -120px;
+        right: -120px;
+        bottom: -120px;
+        background: #383d6f;
+        transition-delay: 0.1s;
+        color: white;
+    }
+
+    .open .l2 {
+        transition-delay: 0.1s;
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+        opacity: 1;
+    }
+
+    .open .l2:hover {
+        background: shade(#383d6f, 90%);
+        color: white;
+        transition-delay: 0s;
+    }
+
+    .open .l2:active {
+        background: shade(#383d6f, 50%);
+        color: white;
+    }
+
+    .open .l2.toggle {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+    }
+
+    .l3 {
+        top: -50px;
+        left: -50px;
+        right: -50px;
+        bottom: -50px;
+        background: #515581;
+        transition-delay: 0.2s;
+        color: white;
+    }
+
+    .open .l3 {
+        transition-delay: 0.2s;
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+        opacity: 1;
+    }
+
+    .open .l3:hover {
+        background: shade(#515581, 90%);
+        color: white;
+        transition-delay: 0s;
+    }
+
+    .open .l3:active {
+        background: shade(#515581, 50%);
+        color: white;
+    }
+
+    .open .l3.toggle {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+    }
+
+    .l4 {
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        background: #6a6d93;
+        transition-delay: 0.3s;
+        color: white;
+    }
+
+    .open .l4 {
+        transition-delay: 0.3s;
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+        opacity: 1;
+    }
+
+    .open .l4:hover {
+        background: shade(#6a6d93, 90%);
+        color: white;
+        transition-delay: 0s;
+    }
+
+    .open .l4:active {
+        background: shade(#6a6d93, 50%);
+        color: white;
+    }
+
+    .open .l4.toggle {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+    }
+
+    .l5 {
+        top: 80px;
+        left: 80px;
+        right: 80px;
+        bottom: 80px;
+        background: #8386a5;
+        transition-delay: 0.2s;
+        color: white;
+    }
+
+    .open .l5 {
+        transition-delay: 0.2s;
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+        opacity: 1;
+    }
+
+    .open .l5:hover {
+        background: shade(#8386a5, 90%);
+        color: white;
+        transition-delay: 0s;
+    }
+
+    .open .l5:active {
+        background: shade(#8386a5, 50%);
+        color: white;
+    }
+
+    .open .l5.toggle {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+    }
+
+    .l6 {
+        top: 140px;
+        left: 140px;
+        right: 140px;
+        bottom: 140px;
+        background: #9b9eb7;
+        transition-delay: 0.2s;
+        color: white;
+    }
+
+    .open .l6 {
+        transition-delay: 0.2s;
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+        opacity: 1;
+    }
+
+    .open .l6:hover {
+        background: shade(#9b9eb7, 90%);
+        color: white;
+        transition-delay: 0s;
+    }
+
+    .open .l6:active {
+        background: shade(#9b9eb7, 50%);
+        color: white;
+    }
+
+    .open .l6.toggle {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+    }
+
+    .l7 {
+        top: 230px;
+        left: 210px;
+        right: 200px;
+        bottom: 200px;
+        background: #b4b6c9;
+        transition-delay: 0.4s;
+        color: white;
+    }
+
+    .open .l7 {
+        transition-delay: 0.4s;
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, 190deg);
+        opacity: 1;
+    }
+
+    .open .l7:hover {
+        background: shade(#b4b6c9, 90%);
+        color: #060c4b;
+        transition-delay: 0s;
+    }
+
+    .open .l7:active {
+        background: shade(#b4b6c9, 50%);
+        color: #060c4b;
+    }
+
+    .open .l7.toggle {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, 10deg);
+    }
+
+    .toggle {
+        line-height: 60px;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+        background: #b4b6c9;
+        opacity: 1;
+        transform: none;
+        pointer-events: auto;
+        transition-delay: 0s;
+    }
+
+    .open .toggle {
+        transform: rotate3d(0, 0, 1, 0deg);
+    }
+
+    .toggle:hover {
+        background: shade(gold, 90%);
+        text-decoration: underline;
+    }
+
+    .toggle:active {
+        background: shade(gold, 50%);
+        color: rgba(255, 215, 0, 0.5);
+        transform: scale(0.9);
+        transition-duration: 0s;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-left {
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        height: auto;
+        margin-top: 4rem;
+        order: 2;
+    }
+
+    .home-left h1 {
+        font-size: 8vw !important;
+    }
+
+    .home-right {
+        justify-content: center;
+        height: auto;
+        margin-top: 13rem;
+    }
+
+    .home-right img {
+        width: 60vw;
+        max-width: fit-content;
+    }
+
+
+}
